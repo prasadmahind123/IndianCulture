@@ -4,7 +4,7 @@ import './Calender.css';
 import NavBar from "../Components/NavBar"
 import { PiGreaterThanThin } from "react-icons/pi";
 import { useNavigate  } from 'react-router-dom';
-import Scrollup from "../Components/Scrollup.jsx"
+import Scrollup from "../Components/ScrollUp.jsx"
 
 const Calender = () => {
   const [festivalName, setFestivalName] = useState('');
