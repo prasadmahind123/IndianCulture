@@ -4,7 +4,7 @@ import { PiGreaterThanThin } from 'react-icons/pi';
 import { useState } from 'react';
 import './Festival.css'
 import { useNavigate  } from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 export default function Festivals() {
   const navigate = useNavigate();
     const handleHome = () => {
