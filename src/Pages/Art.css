@@ -1,0 +1,105 @@
+
+.image-container{
+    display: flex;
+}
+figure{
+    margin: 0;
+    flex-basis: 50%;
+    width: 100%;
+}
+.dance-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.dance-container .type-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.dance-container .type-1 h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.dance-container .type-1 p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.dance-container .dance-heading p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.dance-container .dance-heading h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.dance-container .sign-dance h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    width: 100%; 
+}
+.dance-container .sign-dance ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+.dance-container .image-container{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+
+}
+
+.dance-container .image-container img{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 20px;
+}
+.dance-container .image-container figcaption{
+    font-size: 0.7rem;
+    text-align: center;
+}
+.dance-container .image-container figure p{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .wild-page-3 .wild-page-3-1 h1{
+        font-size: 1.5rem;
+    }
+    .wild-page-3 .wild-page-3-1 p{
+        font-size: 1.2rem;
+    }
+    .wild-page-3 .wild-page-3-1{
+        width: 90%;
+        text-align: justify;
+        padding: 0rem;
+    }
+    .dance-container  h1{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .dance-container .dance-heading p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .dance-container .type-1 h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .dance-container .type-1 p{
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+

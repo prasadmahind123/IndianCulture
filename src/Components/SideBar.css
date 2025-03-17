@@ -1,0 +1,15 @@
+.sidebar ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: #222;
+    padding: 1rem;
+    cursor: pointer;
+}
+.sidebar ul li{
+    padding: 1rem;
+    font-weight: bold;
+}
