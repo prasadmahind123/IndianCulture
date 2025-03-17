@@ -6,7 +6,7 @@ import { IndianCuisine } from '../Data/IndianCuisine';
 import './Cuisine.css';
 import { useState , useEffect } from 'react';
 import {Link , useNavigate } from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 
 
 const Cuisine = () => {
