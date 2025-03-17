@@ -4,7 +4,7 @@ import { useState } from "react";
 import { WildData } from "../Data/WildData";
 import { Link } from "react-router-dom";
 import { useNavigate  } from 'react-router-dom';
-import ScrollUp from "../Components/Scrollup";
+import ScrollUp from "../Components/ScrollUp";
 import './wild.css';
 export default function Wild() {
     const navigate = useNavigate();
