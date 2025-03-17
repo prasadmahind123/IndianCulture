@@ -3,7 +3,7 @@ import { PiGreaterThanThin } from "react-icons/pi";
 import { FortsData } from "../Data/FortsData";
 import { Link , useNavigate } from "react-router-dom";
 import './Forts.css'
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 export default function Forts() {
     const navigate = useNavigate();
     const handleHome = () => {
