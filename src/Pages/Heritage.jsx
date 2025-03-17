@@ -4,7 +4,7 @@ import './Heritage.css'
 import { PiGreaterThanThin } from "react-icons/pi";
 import Typewriter from 'typewriter-effect';
 import { useNavigate } from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup.jsx';
+import ScrollUp from '../Components/ScrollUp.jsx';
 export default function Heritage() {
     const navigate = useNavigate();
     const handleHome = () => {
