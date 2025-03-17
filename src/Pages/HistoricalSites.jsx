@@ -2,7 +2,7 @@ import NavBar from '../Components/NavBar'
 import { HeritagePlaces } from '../Data/HeritagePlaces';
 import { PiGreaterThanThin } from "react-icons/pi";
 import { Link , useNavigate} from "react-router-dom";
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 import './historicalplacs.css'
 export default function HistoricalSites() {
     const navigate = useNavigate();
