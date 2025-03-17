@@ -4,7 +4,7 @@ import './Yoga.css'
 import Typewriter from 'typewriter-effect';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 
 export default function Yoga() {
   const navigate = useNavigate();
