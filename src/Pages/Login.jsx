@@ -68,7 +68,7 @@ const Login = () => {
         password: Spassword,
       });
       await createUserWithEmailAndPassword(auth, Semail, Spassword);
-      window.location.href = '/home';
+      navigate('/')
     } catch (error) {
       alert(error.message);
     } finally {
