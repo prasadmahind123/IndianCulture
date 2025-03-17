@@ -4,7 +4,7 @@ import { useState , useEffect } from 'react'
 import './Caves.css'
 import { CavesData } from '../Data/CavesData';
 import { Link , useNavigate} from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 export default function Caves() {
     const navigate = useNavigate();
     const handleHome = () => {
