@@ -5,7 +5,7 @@ import { unescoTemples } from '../Data/unescoTemples';
 import { otherTemples } from '../Data/otherTemples';
 import { Jyotirlings } from '../Data/Jyotirlings';
 import { Link , useNavigate } from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup';
+import ScrollUp from '../Components/ScrollUp';
 
 import './Temples.css'
 export default function Temples() {
