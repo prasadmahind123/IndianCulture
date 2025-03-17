@@ -6,7 +6,7 @@ import SetDate from '../Components/SetDate.jsx';
 import Typewriter from 'typewriter-effect';
 import { Page4Buttons } from '../Data/Page4Buttons.jsx';
 import { useNavigate } from 'react-router-dom';
-import ScrollUp from '../Components/Scrollup.jsx';
+import ScrollUp from '../Components/ScrollUp.jsx';
 
 const Home = () => {
   const navigate = useNavigate();
