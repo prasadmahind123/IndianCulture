@@ -784,14 +784,6 @@ button {
           color: var(--text-color);
         }
 
-        .read-more {
-          display: inline-flex;
-          align-items: center;
-          margin: 0 1.5rem 1.5rem;
-          font-weight: 600;
-          cursor: pointer;
-        }
-
         /* Featured Site Section */
         .heritage  .featured-site {
           display: flex;
