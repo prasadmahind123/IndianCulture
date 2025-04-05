@@ -6,7 +6,7 @@ export const FestivalData = [
         img1: '/images/Festivals/diwali-1.jpg',
         img2: '/images/Festivals/diwali-2.webp',
         img3: '/images/Festivals/diwali-3.jpg',
-        description: ' Celebrates the return of Lord Rama to Ayodhya after defeating Ravana (Hindu tradition). It also marks the victory of light over darkness and good over evil.',
+        description: ' Celebrates the return of Lord Rama to Ayodhya after defeating Ravana (Hindu tradition). ',
         info : [
             "Diwali, also known as Deepavali, is one of the most widely celebrated festivals in India. It signifies the victory of light over darkness, good over evil, and knowledge over ignorance. Observed by Hindus, Jains, Sikhs, and Buddhists across India and beyond, Diwali is a festival of immense cultural and spiritual significance. It usually falls between October and November, depending on the Hindu lunar calendar.",
             "Rama’s Return to Ayodhya: The most widely known legend associates Diwali with Lord Rama’s return to Ayodhya after 14 years of exile and his victory over the demon king Ravana. To welcome him, the people of Ayodhya lit thousands of oil lamps (diyas), marking the origin of the festival."
@@ -66,7 +66,7 @@ export const FestivalData = [
         img1: '/images/Festivals/navratri-1.jpg',
         img2: '/images/Festivals/navratri-2.webp',
         img3: '/images/Festivals/navratri-3.webp',
-        description: ' Devoted to Goddess Durga’s victory over Mahishasura. In Gujarat, it is celebrated with Garba and Dandiya, while in Bengal, Durga Puja is grandly observed.',
+        description: ' Devoted to Goddess Durga’s victory over Mahishasura. ',
         info : [
             "Navratri and Durga Puja are two of the most significant Hindu festivals dedicated to Goddess Durga, celebrating her divine power, victory over evil, and the triumph of righteousness. These festivals, observed with great devotion and enthusiasm across India, symbolize strength, devotion, and feminine power (Shakti).",
             "Navratri, meaning nine nights, is a nine-day festival dedicated to Goddess Durga and her nine forms, known as Navadurga. It is celebrated in two major forms: Sharad Navratri (September-October) and Chaitra Navratri (March-April).",
@@ -115,7 +115,7 @@ export const FestivalData = [
     {
         id: 4,
         name: 'Eid-ul-Fitr – The Festival of Breaking the Fast',
-        date: 'When: Depends on the Islamic lunar calendar (after Ramadan)',
+        date: 'When: Depends on the Islamic lunar calendar',
         img1: '/images/Festivals/eid-ul-fitr-1.jpg',
         img2: '/images/Festivals/eid-ul-fitr-2.webp',
         img3: '/images/Festivals/eid-ul-fitr-3.jpg',
@@ -139,7 +139,7 @@ export const FestivalData = [
         img1: '/images/Festivals/Chrisms-1.webp',
         img2: '/images/Festivals/Chrisms-2.webp',
         img3: '/images/Festivals/Chrisms-3.jpg',
-        description: 'Marks the birth of Jesus Christ and the message of peace and love.',
+        description: 'Christmas is one of the most significant festivals in Christianity, celebrated on December 25th each year to mark the birth of Jesus Christ',
         info: [
             "Christmas is one of the most significant festivals in Christianity, celebrated on December 25th each year to mark the birth of Jesus Christ, the central figure of Christianity. It is observed by millions of people worldwide, not only as a religious event but also as a cultural celebration. The festival symbolizes peace, love, joy, and the spirit of giving.",
             "Christmas is a festival of faith, joy, and togetherness. It reminds people of Jesus Christ’s message of love, hope, and salvation. Whether through religious observances, family gatherings, or acts of kindness, Christmas unites people in a spirit of peace, generosity, and goodwill.",
@@ -253,7 +253,7 @@ export const FestivalData = [
         img1: '/images/Festivals/Onam-1.jpg',
         img2: '/images/Festivals/onam-2.webp',
         img3: '/images/Festivals/onam-3.webp',
-        description: ' Celebrates the return of King Mahabali and the harvest season.',
+        description: ' Celebrates the return of King Mahabali and the harvest season.Onam is the most significant festival of Kerala.',
         info: [
             "Onam is the most significant festival of Kerala, celebrated with immense joy and grandeur. It is a harvest festival that marks the homecoming of the legendary King Mahabali and showcases Kerala’s rich culture, traditions, and prosperity. Onam is a 10-day festival, usually observed in August-September (Malayalam month of Chingam), with the grand Thiruvonam being the most important day.",
             "Onam is deeply rooted in the legend of King Mahabali, a benevolent Asura king who ruled Kerala with fairness and justice. Under his reign, Kerala experienced peace, prosperity, and equality. However, fearing that his growing power might challenge the gods, Lord Vishnu took the form of Vamana (a dwarf Brahmin) and visited Mahabali.",
@@ -294,6 +294,22 @@ export const FestivalData = [
             "Vesak, also known as Buddha Purnima, is the most significant Buddhist festival, celebrated to commemorate the birth, enlightenment, and passing (parinirvana) of Gautama Buddha. It is observed by Buddhists worldwide, especially in countries like India, Sri Lanka, Nepal, Thailand, Myanmar, Cambodia, China, Japan, and Tibet. The festival falls on the full moon day of the month of Vaisakha (April-May) according to the lunar calendar.",
             "Vesak (Buddha Purnima) is the holiest day for Buddhists, marking the birth, enlightenment, and liberation of Gautama Buddha. It is celebrated with prayers, meditation, generosity, and cultural festivities, spreading Buddha’s timeless message of peace, wisdom, and compassion. The festival serves as a reminder to follow the path of righteousness (Dharma) and cultivate kindness toward all beings.",
             "Vesak, also known as Buddha Purnima, is observed with deep devotion, spiritual reflection, and acts of kindness. On this sacred day, Buddhists visit temples and monasteries, offering flowers, candles, and incense while chanting sacred scriptures. These offerings symbolize the impermanence of life and the need for mindfulness. Many devotees engage in meditation and prayer, seeking inner peace and enlightenment by reflecting on Buddha’s teachings. Acts of generosity (Dana) play a significant role in Vesak, with people donating food, clothes, and money to the poor and monks. Releasing captive birds and animals is also a common practice, representing compassion and liberation. Lighting oil lamps and lanterns is a prominent tradition, symbolizing the light of wisdom dispelling ignorance. In many countries, grand processions and cultural performances are held, showcasing scenes from Buddha’s life. Some followers observe vegetarianism or fasting, emphasizing non-violence (Ahimsa) and self-discipline. The festival is a time for self-purification, kindness, and spreading the message of peace, making Vesak a deeply meaningful and spiritually enriching occasion."
+        ],
+        info1: []
+    },
+    {
+        id: 11,
+        name : "Chetri Chandra",
+        date : "When: March/April",
+        img1 : "/images/Festivals/chetri-1.webp",
+        img2 : "/images/Festivals/chetri-1.webp",
+        img3 : "/images/Festivals/chetri-1.webp",
+        description : "Cheti Chand, also known as Jhulelal Jayanti, is the Sindhi New Year festival celebrated by the Sindhi Hindu community.",
+        info : [
+            "Cheti Chand, also known as Jhulelal Jayanti, is the Sindhi New Year festival celebrated by the Sindhi Hindu community. It marks the birth anniversary of Jhulelal, the community's patron saint and an incarnation of Varuna Devta, the Vedic deity of water. The festival falls on the first or second day of the Sindhi month of Chet, corresponding to late March or early April in the Gregorian calendar. ",
+            "The origins of Cheti Chand date back to a time when Sindhi Hindus faced religious persecution under a tyrannical ruler who sought to enforce conversions. In response to their prayers, Varuna Devta is believed to have incarnated as Jhulelal to protect the community and uphold their religious freedom. This divine intervention is commemorated annually during Cheti Chand.",
+            "Celebrations involve worship near water bodies, symbolizing the significance of water in sustaining life and honoring Jhulelal's association with the river. Devotees perform rituals such as Jyot Jagan, lighting a diya made of wheat flour with five wicks, and offering Behrana Sahib, which includes items like an oil lamp, cardamom, sugar, fruits, and Akho (rice). The festival is marked by processions, devotional singing, and community feasts, reflecting the rich cultural heritage of the Sindhi people. ​",
+            "Cheti Chand not only signifies the advent of the Sindhi New Year but also serves as a reminder of the community's resilience and devotion to their faith and traditions."
         ],
         info1: []
     }
