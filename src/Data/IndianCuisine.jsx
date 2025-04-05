@@ -1,7 +1,7 @@
 export const IndianCuisine = [
     {
       index: 1,
-      img : "public/images/CuisinePage/rogan-josh.webp",
+      img : "/images/CuisinePage/rogan-josh.webp",
       title: "Rogan Josh",
       state: "Jammu-Kashmir",
       description: "A rich, aromatic mutton curry cooked with yogurt, onions, and Kashmiri spices.",
@@ -79,7 +79,7 @@ export const IndianCuisine = [
     {
       index: 6,
       title: "Misal Pav",
-      img : "public/images/CuisinePage/misal-pav.webp",
+      img : "/images/CuisinePage/misal-pav.webp",
       state: "Maharashtra",
       description: "A spicy, tangy curry made of sprouted lentils, topped with crispy farsan and served with pav.",
       history: "Originating from Maharashtra, Misal Pav is a beloved street food known for its spicy, flavorful gravy. It has regional variations such as Kolhapuri Misal, which is extra fiery.",
