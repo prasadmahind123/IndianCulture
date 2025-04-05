@@ -91,3 +91,18 @@
   .contact-form button:hover {
     background-color: #27408b;
   }
+  @media  (max-width: 768px) {
+    .contact-card {
+      width: 90%;
+      margin: 2rem auto;
+    }
+    .contact-group{
+      width: 15rem;
+      margin: 0 auto;
+    }
+    .contact-form .contact-group label{
+      font-size: 0.785rem;
+      top: 0;
+    }
+    
+  }
