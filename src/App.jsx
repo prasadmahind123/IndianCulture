@@ -33,7 +33,7 @@ import ForgotPasswordPage from './Pages/ForgotPasswordPage';
 
 const App = () => {
   return (
-    <BrowserRouter basename = "/tothepoint_login">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
