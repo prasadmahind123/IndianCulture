@@ -64,7 +64,7 @@ export default function SideBar() {
             {user ? (
               <span onClick={() => handleNavigation('/profile')}>Profile</span>
             ) : (
-              <span onClick={() => handleNavigation('/login')}>Login</span>
+              <span onClick={() => handleNavigation('/loginPage')}>Login</span>
             )}
           </li>
         </ul>
