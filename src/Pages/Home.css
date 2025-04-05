@@ -1327,7 +1327,7 @@ button {
   @media (max-width: 768px) {
     .hero-container {
       margin-top: 0rem;
-      padding: 1rem;
+      padding: 3rem;
       height: 100%;
       flex-direction: column;
     }
