@@ -1,7 +1,7 @@
 export const IndianCuisine = [
     {
       index: 1,
-      img : "/images/CuisinePage/rogan-josh.webp",
+      img : "/images/CuisinePage/Rogan-Josh.webp",
       title: "Rogan Josh",
       state: "Jammu-Kashmir",
       description: "A rich, aromatic mutton curry cooked with yogurt, onions, and Kashmiri spices.",
