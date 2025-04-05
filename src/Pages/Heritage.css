@@ -700,7 +700,7 @@ button {
           align-items: center;
           margin-top: 2rem;
           padding: 6rem 5%;
-          background: linear-gradient(135deg, #FFF8F0 0%, #FFE0B2 100%);
+/*           background: linear-gradient(135deg, #FFF8F0 0%, #FFE0B2 100%); */
         }
 
         .heritage   .hero-content {
