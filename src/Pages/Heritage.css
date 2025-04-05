@@ -1112,6 +1112,7 @@ button {
         @media (max-width: 768px) {
          .heritage .hero {
             flex-direction: column;
+             margin-top: 0;
           }
           .heading .hero{
             padding: 1rem 0;
