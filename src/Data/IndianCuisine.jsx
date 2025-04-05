@@ -1,10 +1,10 @@
 export const IndianCuisine = [
     {
       index: 1,
-      img : "/images/CuisinePage/Rogan-Josh.webp",
+      img : "public/images/CuisinePage/rogan-josh.webp",
       title: "Rogan Josh",
       state: "Jammu-Kashmir",
-      description: "A rich, aromatic mutton curry cooked with yogurt, onions, and Kashmiri spices.",
+      description: "A rich, aromatic mutton curry cooked with yogurt, onions, and Kashmiri spices.Rogan Josh is  known for its deep red color, tender meat, and flavorful spices.",
       history: "Rogan Josh has Persian origins and was brought to India by the Mughals. It became a key part of Kashmiri Wazwan, a traditional feast. The dish is known for its deep red color, which comes from Kashmiri red chilies, and its unique blend of flavors that are both spicy and fragrant.",
       preparation: "Slow-cooked with lamb or mutton, it includes ingredients like cardamom, cinnamon, and cloves. Traditionally, it is prepared without tomatoes, relying on yogurt and spices for its rich taste.",
       culturalSignificance: "Served during Kashmiri celebrations and weddings, it represents the royal heritage of the region.",
@@ -35,7 +35,7 @@ export const IndianCuisine = [
       title: "Dhokla",
       img : "/images/CuisinePage/Dhokla.webp",
       state: "Gujarat",
-      description: "A soft, spongy, and mildly tangy snack made from fermented rice and chickpea flour.",
+      description: "Dhokla is a popular steamed snack from Gujarat. A soft, spongy, and mildly tangy snack made from fermented rice and chickpea flour.",
       history: "Dhokla dates back to ancient Gujarat, with references in 16th-century texts. It is a healthy, protein-rich dish that gained popularity across India.",
       preparation: "Prepared by fermenting a batter of rice and split chickpeas, then steamed and tempered with mustard seeds, green chilies, and curry leaves.",
       culturalSignificance: "Dhokla is a staple breakfast and snack item, symbolizing Gujarat’s love for light and nutritious foods.",
@@ -79,7 +79,7 @@ export const IndianCuisine = [
     {
       index: 6,
       title: "Misal Pav",
-      img : "/images/CuisinePage/misal-pav.webp",
+      img : "public/images/CuisinePage/misal-pav.webp",
       state: "Maharashtra",
       description: "A spicy, tangy curry made of sprouted lentils, topped with crispy farsan and served with pav.",
       history: "Originating from Maharashtra, Misal Pav is a beloved street food known for its spicy, flavorful gravy. It has regional variations such as Kolhapuri Misal, which is extra fiery.",
@@ -96,7 +96,7 @@ export const IndianCuisine = [
       title: "Masor Tenga",
       img : "/images/CuisinePage/Masor-Tenga.webp",
       state: "Assam",
-      description: "A light, tangy fish curry prepared with tomatoes, lemon, and mustard seeds.",
+      description: "Masor Tenga is a light and tangy fish curry from Assam . Masor Tenga is best served with plain steamed rice, making it a comforting and wholesome meal. ",
       history: "A staple of Assamese cuisine, Masor Tenga is a refreshing fish dish that balances spice and tanginess, popular during summers.",
       preparation: "Freshwater fish is cooked with tomatoes, elephant apple, or lemon, and lightly spiced for a tangy and soothing taste.",
       culturalSignificance: "Often served in Assamese households as part of daily meals, highlighting the region’s love for fish.",
@@ -128,7 +128,7 @@ export const IndianCuisine = [
       title: "Puttu & Kadala Curry",
       img : "/images/CuisinePage/Puttu & Kadala Curry.webp",
       state: "Kerala",
-      description: "A popular breakfast dish consisting of steamed rice flour cakes served with black chickpea curry.",
+      description: "Puttu and Kadala Curry is a traditional and beloved breakfast dish from Kerala, often enjoyed for its nutritional value, simplicity, and rich flavors.",
       history: "Puttu has been a staple of Kerala cuisine for centuries and is loved for its soft texture and unique cylindrical shape.",
       preparation: "Ground rice is layered with coconut and steamed in a bamboo or steel cylinder. Served with a spicy chickpea curry.",
       culturalSignificance: "Represents Kerala’s love for coconut and rice-based dishes, often paired with bananas or ghee.",
@@ -156,6 +156,21 @@ export const IndianCuisine = [
         "Churma is made by crushing baked baatis and mixing them with ghee and powdered sugar or jaggery. It has a grainy, melt-in-the-mouth texture and is sometimes flavored with cardamom, saffron, and nuts like almonds and cashews. Churma adds a perfect sweet contrast to the savory dal and baati.",
         "Dal Baati Churma is not just a dish but an experience that reflects Rajasthan’s warrior history and harsh desert climate. The dish is high in energy, making it a favorite among farmers and warriors in the past. Today, it is served during festivals, weddings, and special occasions, often accompanied by onions, pickles, and buttermilk (chaas).",
   
+      ]
+    },
+    {
+      index: 11,
+      title: "Dal Pakwan",
+      img : "/images/CuisinePage/Dal-Pakwan.webp",
+      state: "Maharashtra",
+      description: "Dal Pakwan is a traditional Sindhi breakfast dish that combines the comforting flavors of spiced lentils with the satisfying crunch of crispy flatbread.",
+      history: "Dal Pakwan has its roots in Sindhi cuisine, which originates from the Sindh region—now in Pakistan. Before the Partition of India in 1947, Sindhi Hindus lived across the Sindh province and had a rich culinary tradition. After the Partition, many Sindhi Hindus migrated to India, bringing with them their unique culture, language, and food. Dal Pakwan emerged as a signature breakfast dish among Sindhi communities, especially during festive occasions or family gatherings.",
+      info : [
+        "Dal Pakwan is a traditional Sindhi breakfast dish that combines the comforting flavors of spiced lentils with the satisfying crunch of crispy flatbread. The dish consists of chana dal (split Bengal gram) cooked until soft and then tempered with aromatic spices like cumin seeds, turmeric, red chili powder, ginger, garlic, and green chilies. ",
+        "This dal is often garnished with chopped onions, fresh coriander, and a drizzle of tamarind or green chutney to add a tangy kick. It is served with pakwan, which are thin, crispy puris made from refined flour (maida) seasoned with carom seeds, cumin, and black pepper, and deep-fried until golden and crunchy. Eaten together, the combination creates a delightful contrast of textures and flavors — the warmth and softness of the dal perfectly balancing the crispiness of the pakwan.",
+        "Dal Pakwan is not only a hearty and flavorful dish but also holds a special place in Sindhi culture, often enjoyed during festivals, special occasions, or leisurely weekend breakfasts.",
+        "Historically, Dal Pakwan was considered a special or celebratory meal, not something made every day. Its preparation takes time and care—the dal is slow-cooked and perfectly tempered, while the pakwan is rolled out and deep-fried for that ideal crunch. In traditional Sindhi households, it was served to guests as a gesture of warmth and hospitality. Over time, this dish gained popularity beyond the Sindhi community and is now enjoyed by food lovers across India.",
+        "Dal Pakwan has its roots in Sindhi cuisine, which originates from the Sindh region—now in Pakistan. Before the Partition of India in 1947, Sindhi Hindus lived across the Sindh province and had a rich culinary tradition. After the Partition, many Sindhi Hindus migrated to India, bringing with them their unique culture, language, and food. Dal Pakwan emerged as a signature breakfast dish among Sindhi communities, especially during festive occasions or family gatherings."
       ]
     }
   ];
