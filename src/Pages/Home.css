@@ -1296,6 +1296,7 @@ button {
     .hero-image-wrapper {
       height: 450px;
       width: 350px;
+      margin: 0 auto;
     }
   
     .featured-image {
