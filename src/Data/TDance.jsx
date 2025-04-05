@@ -89,7 +89,7 @@ export const TDance = [
       caption2: 'https://creativecommons.org/licenses/by-sa/4.0',
       auth: "Aali Jain",
       licence: "CC BY-SA 4.0 , via Wikimedia Commons",
-      description: "A graceful women's dance known for its slow spins and elegant hand movements.",
+      description: "Ghoomar is a traditional folk dance from Rajasthan, performed by veiled women wearing flowing dresses called ghaghara. ",
       history: "Traditionally performed by Rajput women to celebrate royal occasions and festivals.",
       key_features: [
         "Performed in circular formations with rhythmic twirls.",
@@ -170,7 +170,7 @@ export const TDance = [
       caption2: 'https://creativecommons.org/licenses/by-sa/4.0',
       auth: "Bhuppigraphy",
       licence: "CC BY-SA 4.0 , via Wikimedia Commons",
-      description: "A devotional dance performed with earthen pots filled with burning incense.",
+      description: "The dhunuchi dance, a devotional Bengali dance performed during Durga Puja, is a traditional dance form of West Bengal. ",
       history: "Associated with Durga Puja, this dance is a form of offering to Goddess Durga.",
       key_features: [
         "Dancers hold burning Dhunuchi pots while moving rhythmically.",
@@ -242,7 +242,7 @@ export const TDance = [
       caption2: 'https://creativecommons.org/licenses/by/2.0',
       auth: "Ramesh Lalwani",
       licence: "CC BY 2.0 , via Wikimedia Commons",
-      description: "A tribal dance performed to worship the Karam tree, symbolizing prosperity.",
+      description: "The Karma dance, also known as Karma Naach, is a tribal dance primarily associated with the state of Jharkhand in Indiaand is also performed in neighboring states ",
       history: "Performed by indigenous communities in Chhattisgarh as part of agricultural and nature worship traditions.",
       key_features: [
         "Circular group formations with synchronized footwork.",
