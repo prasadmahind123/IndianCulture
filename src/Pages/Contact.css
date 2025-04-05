@@ -1,0 +1,93 @@
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30rem;
+    padding: 20px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid tomato;
+  }
+  
+  .contact-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 30rem;
+    height: 100%;
+
+  }
+  
+  .contact-form .contact-group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .contact-form .contact-group input,
+  .contact-form .contact-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    background-color: transparent;
+  }
+  
+  .contact-form .contact-group input:placeholder-shown+ label, .contact-form .contact-group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .contact-form .contact-group input:focus,
+  .contact-form .contact-group textarea:focus {
+    border-color: #3366cc;
+  }
+  .contact-group input{
+    font-size: 0.785rem;
+  }
+  .contact-form .contact-group input:focus+ label, .contact-form .contact-group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .contact-form .contact-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-form button {
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #27408b;
+  }

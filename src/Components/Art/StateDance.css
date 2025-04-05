@@ -1,0 +1,10 @@
+.dance-text{
+    width: 90%;
+    margin: 0 auto;
+}
+.dance-text .dance-info p{
+   font-size: 1.2rem;
+   text-align: justify;
+   line-height: 1.5;
+   margin: 1rem 0;
+}

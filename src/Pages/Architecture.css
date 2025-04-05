@@ -1,0 +1,980 @@
+:root {
+    --primary-color: #D35400;
+    --secondary-color: #F39C12;
+    --accent-color: #8E44AD;
+    --text-color: #333333;
+    --light-text: #FFFFFF;
+    --background-color: #FFF8F0;
+    --section-bg: #FFFFFF;
+    --border-color: #E0E0E0;
+  }
+
+  /* Base Styles */
+  .monuments-container {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+  }
+
+  .arch-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 20px;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: var(--secondary-color);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+  }
+
+  .primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .primary-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+
+  .secondary-button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .secondary-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .icon {
+    vertical-align: middle;
+  }
+
+  .rounded-image {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* Hero Section */
+  .arch-hero {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .arch-hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arch-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+  }
+
+  .arch-hero-overlay h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-text);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .arch-hero-overlay p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    background-color: var(--section-bg);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .breadcrumb ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .breadcrumb ul li {
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .breadcrumb ul li:not(:last-child):after {
+    content: '/';
+    margin-left: 10px;
+    color: #999;
+  }
+
+  .breadcrumb ul li:last-child {
+    color: var(--primary-color);
+  }
+
+  /* Introduction Section */
+  .introduction {
+    padding: 5rem 0;
+    background-color: var(--section-bg);
+  }
+
+  .intro-grid {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .intro-content {
+    flex: 1;
+  }
+
+  .intro-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .intro-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+  }
+
+  .intro-image {
+    flex: 1;
+  }
+
+  /* Architectural Styles Section */
+  .arch-styles {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+  .arch-styles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .arch-style-card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .arch-style-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .arch-style-image {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .arch-style-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arch-style-content {
+    flex: 1.5;
+    padding: 1.5rem;
+  }
+
+  .arch-style-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .arch-style-features {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .arch-style-features li {
+    margin-bottom: 0.5rem;
+  }
+
+  .learn-more {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  /* Featured Monuments */
+  .featured-monuments {
+    padding: 5rem 0;
+    background-color: var(--section-bg);
+  }
+
+  .monument-feature {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+  .monument-image {
+    flex: 1.2;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .monument-info {
+    flex: 1;
+  }
+
+  .monument-tag {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .monument-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+
+  .monument-details {
+    margin: 1.5rem 0;
+  }
+
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .monument-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .monuments-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .monument-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .monument-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .monument-card-image {
+    overflow: hidden;
+  }
+
+  .monument-card-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+
+  .monument-card:hover .monument-card-image img {
+    transform: scale(1.1);
+  }
+
+  .monument-card-content {
+    padding: 1.5rem;
+  }
+
+  .monument-card-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .monument-location {
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .view-all-link {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .view-all-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  /* Timeline Section */
+  .timeline-section {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--secondary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 50%;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: var(--primary-color);
+    border: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: -10px;
+  }
+
+  .timeline-date {
+    position: absolute;
+    top: 15px;
+    right: -150px;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  .timeline-item:nth-child(even) .timeline-date {
+    left: -150px;
+    right: auto;
+    text-align: right;
+  }
+
+  .timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  /* Monuments by Region */
+  .monuments-by-region {
+    padding: 5rem 0;
+    background-color: var(--section-bg);
+  }
+
+  .region-map {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .map-container {
+    flex: 1.2;
+  }
+
+  .india-map {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .region-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .region-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+  }
+
+  .region-item ul {
+    list-style: none;
+  }
+
+  .region-item ul li {
+    margin-bottom: 0.7rem;
+  }
+
+  /* Conservation Section */
+  .conservation {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+  .conservation-grid {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .conservation-content {
+    flex: 1;
+  }
+
+  .conservation-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .conservation-orgs {
+    margin: 2rem 0;
+  }
+
+  .org-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .org-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .conservation-image {
+    flex: 1;
+  }
+
+  /* Gallery Section */
+  .gallery-section {
+    padding: 5rem 0;
+    background-color: var(--section-bg);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+  }
+
+  .gallery-cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  /* Virtual Tours */
+  .virtual-tours {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+  .tours-content {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .tours-intro {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .tours-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .tour-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .tour-image {
+    position: relative;
+  }
+
+  .tour-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tour-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .tour-details {
+    padding: 1.5rem;
+  }
+
+  .tour-details h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .tour-details p {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Plan Your Visit */
+  .plan-visit {
+    padding: 5rem 0;
+    background-color: var(--section-bg);
+  }
+
+  .visit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .visit-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .visit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .visit-icon {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .big-icon {
+    color: var(--primary-color);
+  }
+
+  .visit-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+
+  .visit-card p {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Resources Section */
+  .resources-section {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .resource-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .resource-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+  }
+
+  .resource-list {
+    list-style: none;
+  }
+
+  .resource-list li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  .resource-list li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
+
+
+  @media (max-width: 1200px) {
+    .arch-styles-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .monuments-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .arch-timeline-date {
+      right: -120px;
+    }
+    
+    .arch-timeline-item:nth-child(even) .timeline-date {
+      left: -120px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .arch-intro-grid {
+      flex-direction: column;
+    }
+    
+    .monument-feature {
+      flex-direction: column;
+    }
+    
+    .monuments-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tours-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .region-map {
+      flex-direction: column;
+    }
+    
+    .conservation-grid {
+      flex-direction: column;
+    }
+    
+    .resources-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline::after {
+      left: 31px;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+      left: 0;
+    }
+    
+    .timeline-dot {
+      left: 15px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: 15px;
+    }
+    
+    .timeline-date {
+      right: auto;
+      left: 70px;
+      text-align: left;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-date {
+      left: 70px;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
+    
+    .mobile-menu {
+      display: flex;
+    }
+    
+    .arch-hero-overlay h1 {
+      font-size: 2.5rem;
+    }
+    
+    .intro-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .visit-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tours-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .region-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .newsletter-form input {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .newsletter-form .primary-button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .arch-styles-grid{
+      grid-template-columns: 1fr;
+    }
+    .arch-section-title {
+      font-size: 2rem;
+    }
+    
+    .arch-hero-overlay h1 {
+      font-size: 2rem;
+    }
+    
+    .monument-info h3 {
+      font-size: 2rem;
+    }
+    
+    .monuments-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .visit-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .resources-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .timeline-date {
+      position: relative;
+      left: 0 !important;
+      text-align: left !important;
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .monument-actions {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .monument-actions .primary-button,
+    .monument-actions .secondary-button {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+}
+@media (max-width: 768px){
+  .intro-content h2{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .introduction{
+    padding: 2rem 0;
+  }
+  .conservation-content h2{
+    font-size: 1.7rem;
+    text-align: start;
+  }
+  .conservation{
+    padding: 0;
+  }
+}

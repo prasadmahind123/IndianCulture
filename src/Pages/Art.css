@@ -1,0 +1,305 @@
+
+.image-container{
+    display: flex;
+}
+figure{
+    margin: 0;
+    flex-basis: 50%;
+    width: 100%;
+}
+.dance-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.dance-container .type-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.dance-container .type-1 h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: "Tektur", sans-serif;
+
+}
+.dance-container .type-1 p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+}
+.dance-container .dance-heading p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+}
+
+.dance-container .dance-heading h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: "Tektur", sans-serif;
+
+}
+.dance-container .sign-dance h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    width: 100%; 
+    font-family: "Tektur", sans-serif;
+
+}
+.dance-container .sign-dance ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: "Exo 2", sans-serif;
+
+}
+.dance-container .image-container{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+
+}
+
+.dance-container .image-container img{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 20px;
+}
+.dance-container .image-container figcaption{
+    font-size: 0.7rem;
+    text-align: center;
+}
+.dance-container .image-container figure p{
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+}
+@media (max-width: 768px) {
+    .wild-page-3 .wild-page-3-1 h1{
+        font-size: 1.5rem;
+    }
+    .wild-page-3 .wild-page-3-1 p{
+        font-size: 1.2rem;
+    }
+    .wild-page-3 .wild-page-3-1{
+        width: 90%;
+        text-align: justify;
+        padding: 0rem;
+    }
+    .dance-container  h1{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .dance-container .dance-heading p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .dance-container .type-1 h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .dance-container .type-1 p{
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    figure{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    figure img{
+        display: flex;
+        width: 10rem;
+        margin: 0 auto;
+    }
+}
+
+.classical-paintings {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+  .art-feature {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+  .art-image {
+    flex: 1.2;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .art-info {
+    flex: 1;
+  }
+
+  .art-tag {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .art-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+
+  .art-details {
+    margin: 1.5rem 0;
+  }
+
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .art-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .art-styles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .art-style-card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .art-style-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .art-style-image {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .art-style-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .art-style-content {
+    flex: 1.5;
+    padding: 1.5rem;
+  }
+
+  .art-style-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .view-all-link {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .view-all-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--primary-color);
+  }
+  .classical-dance {
+    padding: 5rem 0;
+    background-color: var(--background-color);
+  }
+
+
+
+  .dance-form-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .dance-form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .dance-form-image {
+    overflow: hidden;
+  }
+
+  .dance-form-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+
+  .dance-form-card:hover .dance-form-image img {
+    transform: scale(1.1);
+  }
+
+  .dance-form-content {
+    padding: 1.5rem;
+  }
+
+  .dance-form-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .dance-form-region {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .dance-state-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    .dance-state-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+  }

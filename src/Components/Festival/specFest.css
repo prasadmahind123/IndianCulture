@@ -1,0 +1,19 @@
+
+.wild-text2{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.fest-content{
+    margin: 1rem auto;
+}
+.wild-text2 img{
+    height: 20rem;
+    margin: 2rem auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

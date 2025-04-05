@@ -1,0 +1,52 @@
+
+.info-container .fact{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.info-container .fact .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;     
+    color: #000;
+}
+.info-container .fact .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    width: 50%;
+}
+.wild-1 .title h1{
+    font-size: 3rem;
+    font-family: "Winky Sans", sans-serif;  font-optical-sizing: auto;
+}
+@media (max-width:768px) {
+    .wild-1 .title h1{
+        font-size: 2rem;
+    }
+    .info-container .fact{
+        flex-direction: column;
+        width: 80%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .info-container .fact .left{
+        width: 100%;
+        align-items: start;
+    }
+    .info-container .fact .right{
+        width: 100%;
+        align-items: start;
+    }
+   
+}
