@@ -331,11 +331,15 @@
   }
   
   .read-more {
-    display: inline-block;
-    margin: 0 1rem 1rem;
+    display: inline-flex;
     color: #e63946;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
+  }
+  .read-more .icon{
+    font-size: 1.2rem;
+    transform: translate(0 , -2px);
   }
   
   .read-more:hover {
