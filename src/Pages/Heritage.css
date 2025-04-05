@@ -700,7 +700,7 @@ button {
           align-items: center;
           margin-top: 2rem;
           padding: 6rem 5%;
-          background: linear-gradient(135deg, #FFF8F0 0%, #FFE0B2 100%); 
+          background-color: var(--section-bg);
         }
 
         .heritage   .hero-content {
@@ -774,15 +774,16 @@ button {
         }
 
         .category-card h3 {
-          padding: 1.5rem 1.5rem 0.5rem;
-          font-size: 1.3rem;
+          padding: 1rem;
+          font-size: 1rem;
           color: var(--primary-color);
         }
 
         .category-card p {
-          padding: 0 1.5rem 1.5rem;
           color: var(--text-color);
         }
+
+   
 
         /* Featured Site Section */
         .heritage  .featured-site {
@@ -1104,7 +1105,7 @@ button {
         @media (max-width: 768px) {
          .heritage .hero {
             flex-direction: column;
-             margin-top: 0;
+            margin-top: 0;
           }
           .heading .hero{
             padding: 1rem 0;
