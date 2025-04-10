@@ -39,6 +39,19 @@ export default function NavBar() {
     });
   }, []);
 
+    useEffect(() => {
+    const addScript = document.createElement("script");
+    addScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    addScript.async = true;
+    document.body.appendChild(addScript);
+
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        { pageLanguage: "en", includedLanguages: "hi,ta,bn,mr,te,kn", layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE },
+        "google_translate_element"
+      );
+    };
+  }, []);
   // const handleSearchIconClick = () => {
   //   setIsSearchBarOpen(!isSearchBarOpen);
   // };
@@ -133,6 +146,7 @@ export default function NavBar() {
             <li onClick={handleContact} className="nav-link">
               Contact
             </li>
+              <li><div id="google_translate_element"></div></li>
           </nav>
           <button className="nav-btn primary-btn desktop-only" onClick={() => navigate('/loginPage')}>Login</button>
           <button className="nav-btn icon-btn mobile-only" onClick={handleMenu}>
