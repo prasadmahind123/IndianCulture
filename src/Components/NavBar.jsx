@@ -146,10 +146,11 @@ export default function NavBar() {
             <li onClick={handleContact} className="nav-link">
               Contact
             </li>
-              <li className="nav-link">
-                <div id="google_translate_element"></div>
-              </li>
+             
           </nav>
+           <li className="nav-link">
+            <div id="google_translate_element"></div>
+          </li>
           <button className="nav-btn primary-btn desktop-only" onClick={() => navigate('/loginPage')}>Login</button>
           <button className="nav-btn icon-btn mobile-only" onClick={handleMenu}>
             <span className="sr-only" >  </span>
