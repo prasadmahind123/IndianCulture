@@ -135,7 +135,7 @@ export default function NavBar() {
               Heritage
             </li>
             <li onClick={handleArt} className="nav-link">
-              Art & Culture
+              Art
             </li>
             <li onClick={handleFest} className="nav-link">
               Festivals
@@ -180,68 +180,6 @@ export default function NavBar() {
 
   return (
     <div className='page-container'>
-     {/* <div className="Navbar">
-        <div className="logo-icon">
-           <img src="/images/logo.webp" alt="India" /> 
-          <div className="logo-text">भा</div>
-          <span>भारतीय संस्कृति</span>
-        </div>
-     
-
-        <div className="right">
-          <ul>
-            <div className="nav-hide">
-              <li onClick={handleHome}>Home</li>
-              <li onClick={gotoHeritage} onMouseEnter={handleHeritage} onMouseLeave={handleHeritage} className='heritage-drop'>
-                <p>Heritage</p>
-                {isHeritageDropdownOpen && (
-                  <div className="dropdown">
-                    <ul  className="dropdown-item">
-                      <li onClick={handleArch}>Architecture</li>
-                      <li onClick={handleCuisine}>Cuisine</li>
-                      <li onClick={handleArt}>Art & Dance</li>
-                      <li onClick={handleYoga}>Yoga</li>
-                    </ul>
-                  </div>
-                )}
-              </li>
-              <li onClick={handleFest}>Festivals</li>
-              <li onClick={handleGallery}>Gallery</li>
-              <li onClick={handleCalender}>Calender</li>
-              <li onClick={handleContact}>Contact</li>
-              <li className='search-icon' onClick={handleSearchIconClick}>
-                <IoIosSearch />
-              </li>
-              {isSearchBarOpen && (
-                <li className='search-bar-container'>
-                  <SearchBar />
-                  <button className="close-search-bar" onClick={handleCloseSearchBar}>
-                      &#10005;
-                    </button>
-
-                </li>
-              )}
-            </div>
-            <li onClick={handleAccInfo} className='acc-icon'><MdOutlineAccountCircle />
-              <div className={`acc-content ${accInfo ? 'acc-content-active' : ''}`}>
-                <ul>
-                  <p>Profile</p>
-                  <p onClick={handleLogout}>
-                    <button className="Btn">
-                      <div className="sign">
-                        <svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg>
-                      </div>
-                      <div className="text">Logout</div>
-                    </button>
-                  </p>
-                </ul>
-              </div>
-            </li>
-            <li className='menuBtn' onClick={handleMenu}><TfiMenu /></li>
-          </ul>
-        </div>
-        {sideBar && <SideBar className='sidebar' close={handleMenu} />}
-      </div> */}
       <header className="header">
         <div className=" header-container">
           <Link href="/" className="logo">
@@ -258,7 +196,7 @@ export default function NavBar() {
               Heritage
             </li>
             <li onClick={handleArt} className="nav-link">
-              Art & Culture
+              Art
             </li>
             <li onClick={handleFest} className="nav-link">
               Festivals
