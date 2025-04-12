@@ -35,7 +35,13 @@ export default function SideBar() {
   const handleNavigation = (link) => {
     navigate(link);
   };
-
+  const handleLogout = () => {
+    auth.signOut().then(() => {
+      setUser(null);
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
   return (
     <div>
       <div className="sidebar">
@@ -62,7 +68,7 @@ export default function SideBar() {
             ))}
           <li>
             {user ? (
-              <span onClick={() => handleNavigation('/profile')}>Profile</span>
+              <span onClick={handleLogout}>Logout</span>
             ) : (
               <span onClick={() => handleNavigation('/loginPage')}>Login</span>
             )}
