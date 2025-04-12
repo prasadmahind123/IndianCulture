@@ -124,7 +124,7 @@ export default function ForgotPasswordPage() {
 
       <footer className="auth-footer-bar">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} भारतीय संस्कृति. All rights reserved.</p>
         </div>
       </footer>
     </div>
