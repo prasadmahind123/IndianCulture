@@ -22,7 +22,7 @@ export default function ForgotPasswordPage() {
       setIsSubmitted(true)
     } catch (error) {
       toast.error("Error sending password reset email. Please try again.")
-      console.error("Error sending password reset email:", error)
+      console.error("Error ", error)
     }
   }
 
