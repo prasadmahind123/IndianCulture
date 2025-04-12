@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer , toast } from "react-toastify";
+
 import {
   getAuth,
   sendPasswordResetEmail
@@ -21,8 +21,7 @@ export default function ForgotPasswordPage() {
       await sendPasswordResetEmail(auth, email)
       setIsSubmitted(true)
     } catch (error) {
-      toast.error("Error sending password reset email. Please try again.")
-      console.error("Error ", error)
+      alert("Error ", error)
     }
   }
 
@@ -128,7 +127,6 @@ export default function ForgotPasswordPage() {
           <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
         </div>
       </footer>
-      <ToastContainer className="toast" />
     </div>
   )
 }
