@@ -515,6 +515,10 @@
     gap: 1.5rem;
   }
 
+  .festivals-grid .read-more{
+    margin-top: 2rem;
+  }
+
   .festival-card {
     background-color: white;
     border-radius: 10px;
