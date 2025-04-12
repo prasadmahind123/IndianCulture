@@ -8,7 +8,7 @@ import {
   signInWithPopup,
 } from 'firebase/auth';
 import { getDatabase, ref, set } from 'firebase/database';
-import { ToastContainer, toast } from 'react-toastify';
+
 
 import { app } from '../FireBase';
 const auth = getAuth(app);
@@ -40,13 +40,13 @@ export default function LoginPage() {
         navigate('/');
       } catch (error) {
         if (error.code === 'auth/user-not-found') {
-          toast.error('User not found. Please check your email or register.');
+          alert('User not found. Please check your email or register.');
         } else if (error.code === 'auth/wrong-password') {
-          toast.error('Incorrect password. Please try again.');
+         alert('Incorrect password. Please try again.');
         } else if (error.code === 'auth/invalid-email') {
-          toast.error('Invalid email address. Please check your email.');
+         alert('Invalid email address. Please check your email.');
         } else {
-          toast.error(error.message);
+         alert(error.message);
         }
 
       } finally {
@@ -65,7 +65,7 @@ export default function LoginPage() {
           });
           navigate('/');
         } catch (error) {
-          toast.error(error.message);
+          alert(error.message);
         } finally {
           setIsLoading(false);
         }
@@ -234,7 +234,7 @@ export default function LoginPage() {
           <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
         </div>
       </footer>
-      <ToastContainer className="toast" />
+
 
     </div>
   )
