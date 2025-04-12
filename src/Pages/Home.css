@@ -1003,6 +1003,7 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   transition: transform 0.3s ease;
+  cursor: ponter;
 }
 
 .destination-card:hover {
