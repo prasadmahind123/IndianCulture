@@ -306,14 +306,7 @@
   background-color: #ea580c;
 }
 
-/* .container {
-  display: flex;
-  width: 100%;
-  height: 70%;
-  justify-content: center;
-  align-items : center;
-  text-align: center;
-} */
+
 .hero-image-wrapper {
   position: relative;
   height: 450px;
@@ -437,6 +430,7 @@
   border-radius: var(--border-radius);
   background-color: var(--color-white);
   transition: all 0.3s ease;
+  margin: 1rem;
 }
 
 .highlight-card:hover {
