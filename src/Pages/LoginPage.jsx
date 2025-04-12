@@ -4,9 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import {
   getAuth,
   signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from 'firebase/auth';
+import { getDatabase, ref, set } from 'firebase/database';
 import { app } from '../FireBase';
 const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 export default function LoginPage() {
     const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false)
@@ -38,7 +42,23 @@ export default function LoginPage() {
         setIsLoading(false);
       }
     };
-
+      const handleGoogleSignIn = async () => {
+        setIsLoading(true);
+        try {
+          const result = await signInWithPopup(auth, googleProvider);
+          const user = result.user;
+          await set(ref(getDatabase(app), 'users/' + user.email.split('@')[0]), {
+            name: user.displayName,
+            email: user.email,
+            password: user.uid,
+          });
+          navigate('/');
+        } catch (error) {
+          alert(error.message);
+        } finally {
+          setIsLoading(false);
+        }
+      }
   if (isLoading) {
     return (
       <div className="loader-container">
@@ -169,40 +189,15 @@ export default function LoginPage() {
               <span className="auth-divider-text">Or continue with</span>
             </div>
 
-            <div className="auth-social-buttons">
+            <div className="auth-social-buttons" onClick={handleGoogleSignIn}>
               <button className="auth-btn btn-social">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="auth-icon-small"
-                >
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              <svg className="auth-icon-small" xmlns="http://www.w3.org/2000/svg" width="15" height="20" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262" id="google">
+                  <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path>
+                  <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path>
+                  <path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path>
+                  <path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path>
                 </svg>
-                Facebook
-              </button>
-              <button className="auth-btn btn-social">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="auth-icon-small"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                </svg>
-                Twitter
+                Google
               </button>
             </div>
           </div>
@@ -225,7 +220,7 @@ export default function LoginPage() {
 
       <footer className="auth-footer-bar">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} भारतीय संस्कृति. All rights reserved.</p>
         </div>
       </footer>
     </div>
