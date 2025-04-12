@@ -147,10 +147,10 @@
 }
 @media (max-width: 768px) {
   .header{
-    height: 2.5rem;
+    height:3rem;
   }
   .header-container{
-    padding: 1rem;
+    padding: 1.5rem;
     transform: translate(0 , -20px);
     justify-content: space-between;
   }
