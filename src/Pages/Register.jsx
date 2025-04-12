@@ -2,7 +2,7 @@
 
 import {useEffect, useState } from "react"
 import './Register.css'
-import { ToastContainer, toast } from 'react-toastify';
+
 
 import { useNavigate } from 'react-router-dom';
 import {
@@ -54,13 +54,13 @@ export default function Register() {
           navigate('/');
         } catch (error) {
           if (error.code === 'auth/email-already-in-use') {
-            toast.error('Email already in use. Please try another one.');
+            alert('Email already in use. Please try another one.');
           } else if (error.code === 'auth/invalid-email') {
-            toast.error('Invalid email address. Please check your email.');
+            alert('Invalid email address. Please check your email.');
           } else if (error.code === 'auth/weak-password') {
-            toast.error('Weak password. Please use a stronger password.');
+            alert('Weak password. Please use a stronger password.');
           } else {
-            toast.error(error.message);
+            alert(error.message);
           }
         } finally {
           setIsLoading(false);
@@ -82,7 +82,7 @@ export default function Register() {
           });
           navigate('/');
         } catch (error) {
-          toast.error(error.message);
+          alert(error.message);
         } finally {
           setIsLoading(false);
         }
@@ -326,7 +326,7 @@ export default function Register() {
           <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
         </div>
       </footer>
-      <ToastContainer className="toast" />
+
     </div>
   )
 }
