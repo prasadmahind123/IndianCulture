@@ -17,3 +17,6 @@
     object-fit: cover;
     border-radius: 10px;
 }
+.info-container{
+    margin-top: 4rem;
+}
