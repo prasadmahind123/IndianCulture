@@ -2,6 +2,8 @@
 
 import {useEffect, useState } from "react"
 import './Register.css'
+import { ToastContainer, toast } from 'react-toastify';
+
 import { useNavigate } from 'react-router-dom';
 import {
   getAuth,
@@ -38,7 +40,7 @@ export default function Register() {
       const handleSignUp = async () => {
         setIsLoading(true);
         if (password !== confirmPassword) {
-          alert('Password does not match');
+          toast.error('Passwords do not match. Please try again.');
           setIsLoading(false);
           return;
         }
@@ -51,7 +53,15 @@ export default function Register() {
           await createUserWithEmailAndPassword(auth, email, password);
           navigate('/');
         } catch (error) {
-          alert(error.message);
+          if (error.code === 'auth/email-already-in-use') {
+            toast.error('Email already in use. Please try another one.');
+          } else if (error.code === 'auth/invalid-email') {
+            toast.error('Invalid email address. Please check your email.');
+          } else if (error.code === 'auth/weak-password') {
+            toast.error('Weak password. Please use a stronger password.');
+          } else {
+            toast.error(error.message);
+          }
         } finally {
           setIsLoading(false);
         }
@@ -72,7 +82,7 @@ export default function Register() {
           });
           navigate('/');
         } catch (error) {
-          alert(error.message);
+          toast.error(error.message);
         } finally {
           setIsLoading(false);
         }
@@ -114,7 +124,7 @@ export default function Register() {
 
         <div className="auth-card">
           <div className="auth-header">
-            <div className="auth-logo">भ</div>
+            <div className="auth-logo">भा</div>
             <h2 className="auth-title">Create an Account</h2>
             <p className="auth-description">Join our community to explore India&apos;s rich cultural heritage</p>
           </div>
@@ -313,9 +323,10 @@ export default function Register() {
 
       <footer className="auth-footer-bar">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} भारतीय संस्कृति. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
         </div>
       </footer>
+      <ToastContainer className="toast" />
     </div>
   )
 }
