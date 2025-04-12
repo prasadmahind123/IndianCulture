@@ -182,12 +182,7 @@
     font-size: 0.75rem;
     text-transform: uppercase;
   }
-  
-  .auth-social-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
+
   
   .auth-footer {
     padding: 1.5rem;
@@ -315,6 +310,7 @@
     cursor: pointer;
     transition: all 0.2s ease;
     border: 1px solid transparent;
+    gap: 1rem;
   }
   
   .btn-primary {
@@ -344,6 +340,7 @@
     color: var(--secondary);
     border-color: var(--border);
     width: 100%;
+    margin: 0 auto;
   }
   
   .btn-social:hover {
