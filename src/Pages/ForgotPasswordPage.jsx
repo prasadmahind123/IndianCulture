@@ -2,12 +2,29 @@
 
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer , toast } from "react-toastify";
+import {
+  getAuth,
+  sendPasswordResetEmail
+} from 'firebase/auth';
 
+import { app } from '../FireBase';
+const auth = getAuth(app);
 export default function ForgotPasswordPage() {
     const navigate = useNavigate()
   const [email, setEmail] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
-
+  
+  const resetPassword = async (e) => {
+    e.preventDefault()
+    try {
+      await sendPasswordResetEmail(auth, email)
+      setIsSubmitted(true)
+    } catch (error) {
+      toast.error("Error sending password reset email. Please try again.")
+      console.error("Error sending password reset email:", error)
+    }
+  }
 
 
   return (
@@ -61,7 +78,7 @@ export default function ForgotPasswordPage() {
                     required
                   />
                 </div>
-                <button type="submit" className="auth-btn btn-primary btn-block">
+                <button type="submit" className="auth-btn btn-primary btn-block" onClick={resetPassword}>
                   Send Reset Link
                 </button>
               </form>
@@ -111,6 +128,7 @@ export default function ForgotPasswordPage() {
           <p>&copy; {new Date().getFullYear()} भारतीय विरासत. All rights reserved.</p>
         </div>
       </footer>
+      <ToastContainer className="toast" />
     </div>
   )
 }
