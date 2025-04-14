@@ -225,10 +225,6 @@
   z-index: 0;
 }
 
-/* .hero-image {
-  object-fit: cover;
-  opacity: 0.2;
-} */
 
 .hero-overlay {
   inset: 0;
@@ -480,7 +476,7 @@
 .link-with-icon {
   display: inline-flex;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem 0;
   color: var(--color-primary);
   cursor: pointer;
 }
