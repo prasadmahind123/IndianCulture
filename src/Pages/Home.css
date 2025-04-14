@@ -476,7 +476,7 @@
 .link-with-icon {
   display: inline-flex;
   align-items: center;
-  margin-top: 1rem 0;
+  margin: 1rem 0;
   color: var(--color-primary);
   cursor: pointer;
 }
