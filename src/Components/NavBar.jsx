@@ -1,12 +1,8 @@
 // NavBar.js
 import './navbar.css';
 import { useEffect, useState } from 'react';
-// import { MdOutlineAccountCircle } from "react-icons/md";
-// import { IoIosSearch } from "react-icons/io";
-// import { TfiMenu } from "react-icons/tfi";
 import { app } from '../FireBase';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-// import SearchBar from './SearchBar';
 import { useNavigate } from 'react-router-dom';
 import SideBar from './SideBar';
 import { Link } from 'react-router-dom';
@@ -17,10 +13,8 @@ const auth = getAuth(app);
 export default function NavBar() {
   const navigate = useNavigate();
   const [showLogout, setShowLogout] = useState(false);
-  // const [isSearchBarOpen, setIsSearchBarOpen] = useState(false);
   const [sideBar, setSideBar] = useState(false);
   const [user, setUser] = useState(null);
-  // const [accInfo, setAccInfo] = useState(false);
 
   const handleLogout = () => {
     auth.signOut().then(() => {
@@ -60,18 +54,6 @@ export default function NavBar() {
     setSideBar(!sideBar);
   };
 
-  // const handleLogout = () => {
-  //   auth.signOut().then(() => {
-  //     setUser(null);
-  //   }).catch((error) => {
-  //     console.log(error);
-  //   });
-  // };
-
-  // const handleLogin = () => {
-  //   navigate('/login');
-  // };
-
   const handleHome = () => {
     navigate('/');
   };
@@ -81,17 +63,7 @@ export default function NavBar() {
     navigate('/festivals');
   };
 
-  // const handleGallery = () => {
-  //   navigate('/gallary');
-  // };
 
-  // const handleCalender = () => {
-  //   navigate('/calender');
-  // };
-
-  // const handleArch = () => {
-  //   navigate('/architecture');
-  // };
 
   const handleCuisine = () => {
     navigate('/cuisine');
@@ -101,16 +73,11 @@ export default function NavBar() {
     navigate('/art');
   };
 
-  // const handleYoga = () => {
-  //   navigate('/yoga');
-  // };
 
   const handleContact = () => {
     navigate('/contact');
   };
-  // const handleCloseSearchBar = () => {
-  //   setIsSearchBarOpen(false);
-  // };
+
   const gotoHeritage = () => {
     navigate('/heritage');
   }
@@ -209,6 +176,9 @@ export default function NavBar() {
               Contact
             </li>
           </nav>
+          <li className="nav-link">
+            <div id="google_translate_element"></div>
+          </li>
           <button className="nav-btn primary-btn desktop-only" onClick={() => setShowLogout(!showLogout)}>{user.email}</button>
           {showLogout && (
               <div className="dropdown">
