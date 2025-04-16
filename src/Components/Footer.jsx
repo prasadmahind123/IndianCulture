@@ -25,6 +25,9 @@ export default function Footer() {
   const handleArt = () => {
     navigate('/art');
   }
+const handleTemples = () => {
+     navigate('/temples');
+}
 
   return (
     <div>
@@ -36,10 +39,6 @@ export default function Footer() {
                     <p className="section-description light">
                         Stay updated with the latest events, articles, and news about Indian culture and heritage
                     </p>
-                    {/* <form className="newsletter-form">
-                        <input type="email" placeholder="Enter your email" className="newsletter-input" required />
-                        <button className="btn white-btn">Subscribe</button>
-                    </form> */}
                     </div>
                     <div className="animation-column">
                     <div className="community-animation">
@@ -75,13 +74,13 @@ export default function Footer() {
                     Home
                 </li>
                 <li className="footer-link" onClick={handleHeritage}>
-                    About Us
+                   Heritage
                 </li>
                 <li className="footer-link" onClick={handleFest}>
-                    Events
+                    Festivals
                 </li>
-                <li className="footer-link">
-                    Gallery
+                <li className="footer-link" onClick={handleTemples}>
+                    Temples
                 </li>
                 <li className="footer-link" onClick={handleContact}>
                     Contact
