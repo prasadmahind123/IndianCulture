@@ -1,7 +1,6 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Pages/Home';
-import Login from './Pages/Login';
 import Heritage from './Pages/Heritage';
 import Cuisine from './Pages/Cuisine';
 import Architecture from './Pages/Architecture';
@@ -36,7 +35,6 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/loginPage" element={<LoginPage />} />
         <Route path="/forgotPassword" element={<ForgotPasswordPage />} />
         <Route path="/register" element={<Register />} />
