@@ -2,7 +2,7 @@ import NavBar from '../Components/NavBar'
 import { PiGreaterThanThin } from "react-icons/pi";
 import './Yoga.css'
 import Typewriter from 'typewriter-effect';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import ScrollUp from '../Components/ScrollUp.jsx';
 import Footer from '../Components/Footer';
@@ -14,6 +14,9 @@ export default function Yoga() {
         const handleInfoClick = (info) => {
             setSelectedInfo(info);
           }
+   useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
     const handleHome = () => {
       navigate('/');
     }
