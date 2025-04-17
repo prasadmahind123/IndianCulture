@@ -1,6 +1,6 @@
 import NavBar from "../Components/NavBar"
 import { PiGreaterThanThin } from "react-icons/pi";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import { WildData } from "../Data/WildData";
 import { Link } from "react-router-dom";
 import { useNavigate  } from 'react-router-dom';
@@ -14,7 +14,9 @@ export default function Wild() {
     const handleInfoClick = (info) => {
         setSelectedInfo(info);
       }
-
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
     const handleHome = () => {
         navigate('/'); 
     }
