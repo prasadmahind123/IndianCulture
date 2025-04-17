@@ -110,8 +110,8 @@ const handleTemples = () => {
             <div className="footer-column">
               <h3 className="footer-heading">Connect With Us</h3>
               <div className="contact-info">
-                <p className="contact-text">Email: info@indianculture.org</p>
-                <p className="contact-text">Phone: +91 123 456 7890</p>
+                <p className="contact-text">Email: prasadmahind34@gmail.com</p>
+                <p className="contact-text">Phone: +91 935 695 1755</p>
               </div>
             </div>
           </div>
