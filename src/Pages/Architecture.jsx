@@ -1,11 +1,8 @@
 import NavBar from '../Components/NavBar'
-// import { PiGreaterThanThin } from "react-icons/pi";
-// import Typewriter from 'typewriter-effect';
 import { useState , useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './Architecture.css'
  import { useNavigate } from 'react-router-dom';
-// import ScrollUp from '../Components/ScrollUp';
 import { ChevronRight} from "lucide-react"
 import Footer from '../Components/Footer';
 export default function Architecture() {
@@ -262,136 +259,6 @@ export default function Architecture() {
           </div>
         </div>
       </section>
-
-      {/* Featured Monuments Carousel */}
-      {/* <section className="featured-monuments">
-        <div className="arch-container">
-          <h2 className="section-title">Iconic Monuments</h2>
-          <div className="monument-feature">
-            <div className="monument-image">
-              <img
-                src="/placeholder.svg?height=500&width=800"
-                alt="Taj Mahal"
-                width={800}
-                height={500}
-                className="feature-image"
-              />
-            </div>
-            <div className="monument-info">
-              <div className="monument-tag">World Heritage Site</div>
-              <h3>Taj Mahal</h3>
-              <p>
-                The iconic ivory-white marble mausoleum on the southern bank of the river Yamuna in Agra, built by
-                Mughal emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal.
-              </p>
-              <div className="monument-details">
-                <div className="detail-item">
-                  <MapPin className="icon" size={18} />
-                  <span>Agra, Uttar Pradesh</span>
-                </div>
-                <div className="detail-item">
-                  <Calendar className="icon" size={18} />
-                  <span>Built: 1632-1653 CE</span>
-                </div>
-                <div className="detail-item">
-                  <Info className="icon" size={18} />
-                  <span>Architectural Style: Indo-Islamic, Mughal</span>
-                </div>
-                <div className="detail-item">
-                  <Clock className="icon" size={18} />
-                  <span>Visiting Hours: 6:00 AM - 7:00 PM</span>
-                </div>
-              </div>
-              <div className="monument-actions">
-                <Link href="/monuments/taj-mahal" className="primary-button">
-                  View Details
-                </Link>
-                <Link href="https://maps.google.com" target="_blank" className="secondary-button">
-                  View on Map <ExternalLink className="icon" size={14} />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="monuments-grid">
-            <div className="monument-card">
-              <div className="monument-card-image">
-                <img src="/placeholder.svg?height=300&width=400" alt="Qutub Minar" width={400} height={300} />
-              </div>
-              <div className="monument-card-content">
-                <h3>Qutub Minar</h3>
-                <p className="monument-location">
-                  <MapPin className="icon" size={14} /> Delhi
-                </p>
-                <Link href="/monuments/qutub-minar" className="read-more">
-                  Explore <ChevronRight className="icon" size={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="monument-card">
-              <div className="monument-card-image">
-                <img
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Brihadeshwara Temple"
-                  width={400}
-                  height={300}
-                />
-              </div>
-              <div className="monument-card-content">
-                <h3>Brihadeshwara Temple</h3>
-                <p className="monument-location">
-                  <MapPin className="icon" size={14} /> Thanjavur, Tamil Nadu
-                </p>
-                <Link href="/monuments/brihadeshwara" className="read-more">
-                  Explore <ChevronRight className="icon" size={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="monument-card">
-              <div className="monument-card-image">
-                <img src="/placeholder.svg?height=300&width=400" alt="Khajuraho Temples" width={400} height={300} />
-              </div>
-              <div className="monument-card-content">
-                <h3>Khajuraho Temples</h3>
-                <p className="monument-location">
-                  <MapPin className="icon" size={14} /> Madhya Pradesh
-                </p>
-                <Link href="/monuments/khajuraho" className="read-more">
-                  Explore <ChevronRight className="icon" size={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="monument-card">
-              <div className="monument-card-image">
-                <img
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Ajanta & Ellora Caves"
-                  width={400}
-                  height={300}
-                />
-              </div>
-              <div className="monument-card-content">
-                <h3>Ajanta & Ellora Caves</h3>
-                <p className="monument-location">
-                  <MapPin className="icon" size={14} /> Maharashtra
-                </p>
-                <Link href="/monuments/ajanta-ellora" className="read-more">
-                  Explore <ChevronRight className="icon" size={16} />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="view-all-link">
-            <Link href="/monuments/all">
-              View All Monuments <ArrowRight className="icon" size={16} />
-            </Link>
-          </div>
-        </div> */}
-      {/* </section> */}
 
       {/* Architectural Timeline */}
       <section className="timeline-section">
