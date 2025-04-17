@@ -181,9 +181,9 @@ export default function Architecture() {
                   <li>Ornate calligraphy and geometric patterns</li>
                   <li>Examples: Taj Mahal, Qutub Minar, Fatehpur Sikri</li>
                 </ul>
-                <Link href="/monuments/indo-islamic" className="learn-more">
+                <p onClick={() => navigate('/historicalSites')} className="learn-more">
                   Explore Style <ChevronRight className="icon" size={16} />
-                </Link>
+                </p>
               </div>
             </div>
 
@@ -204,32 +204,9 @@ export default function Architecture() {
                   <li>Elaborate sculptures and pillared halls</li>
                   <li>Examples: Ajanta and Ellora Caves, Elephanta Caves</li>
                 </ul>
-                <Link href="/monuments/rock-cut" className="learn-more">
+                <p onClick={() => navigate('/caves')} className="learn-more">
                   Explore Style <ChevronRight className="icon" size={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="arch-style-card">
-              <div className="arch-style-image">
-                <img
-                  src="/images/Hawa.webp"
-                  alt="Colonial Architecture"
-                  width={450}
-                  height={350}
-                />
-              </div>
-              <div className="arch-style-content">
-                <h3>Colonial Architecture</h3>
-                <p>Structures built during the British colonial period, often blending European and Indian styles.</p>
-                <ul className="arch-style-features">
-                  <li>Neo-Gothic, Neo-Classical, and Indo-Saracenic designs</li>
-                  <li>Monumental public buildings and churches</li>
-                  <li>Examples: Victoria Memorial, Gateway of India</li>
-                </ul>
-                <Link href="/monuments/colonial" className="learn-more">
-                  Explore Style <ChevronRight className="icon" size={16} />
-                </Link>
+                </p>
               </div>
             </div>
 
@@ -251,9 +228,9 @@ export default function Architecture() {
                   <li>Exapmles : Raigad Fort (Capital of the Maratha Empire)</li>
                   <li>Red Fort</li>
                 </ul>
-                <Link href="/monuments/vernacular" className="learn-more">
+                <p onClick={() => navigate('/forts')} className="learn-more">
                   Explore Style <ChevronRight className="icon" size={16} />
-                </Link>
+                </p>
               </div>
             </div>
           </div>
