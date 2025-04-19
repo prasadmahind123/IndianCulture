@@ -13,8 +13,8 @@ const navItems = [
   { id: 6, name: 'Cuisine', link: '/cuisine' },
   { id: 7, name: 'Yoga', link: '/yoga' },
   { id: 8, name: 'Festivals', link: '/festivals' },
-  { id: 9, name: 'Gallary', link: '/gallary' },
-  { id: 10, name: 'Calander', link: '/calender' },
+  { id: 9, name: 'Forts', link: '/forts' },
+  { id: 10, name: 'Music', link: '/music' },
   { id: 11, name: 'Contact', link: '/contact' },
 ];
 
