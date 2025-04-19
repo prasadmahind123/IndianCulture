@@ -4,13 +4,16 @@ import { useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import ScrollUp from '../Components/ScrollUp';
 import Footer from '../Components/Footer';
-
+import { useEffect } from "react";
 import './Music.css'
 export default function Music() {
     const navigate = useNavigate();
     const handleHome = () => {
         navigate('/');
       }
+        useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
   return (
     <div>
         <div className="nav">
