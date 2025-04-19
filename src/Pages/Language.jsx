@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 import ScrollUp from '../Components/ScrollUp';
 import { TopLanguage } from '../Data/TopLanguage';
 import Footer from '../Components/Footer';
-
+import { useEffect } from "react";
 
 import './Language.css'
 export default function Language() {
@@ -13,6 +13,9 @@ export default function Language() {
     const handleHome = () => {
         navigate('/');
       }
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
       
   return (
     <div>
