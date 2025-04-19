@@ -1,4 +1,27 @@
-.contact-card {
+/* Header styles */
+.contact-header {
+  margin-top: 4rem;
+  background: linear-gradient(to right, #f47721, #ff914d);
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid #138808;
+  position: relative;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.contact-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* .contact-card {
     background-color: #fff;
     border-radius: 10px;
     width: 30rem;
@@ -8,9 +31,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+  } */
   
-  .title {
+  /* .title {
     font-size: 24px;
     font-weight: 600;
     text-align: center;
@@ -19,7 +42,6 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    border-top: 5px solid tomato;
   }
   
   .contact-group {
@@ -91,7 +113,8 @@
   .contact-form button:hover {
     background-color: #27408b;
   }
-  @media  (max-width: 768px) {
+ 
+  @media screen and (max-width: 768px) {
     .contact-card {
       width: 90%;
       margin: 2rem auto;
@@ -105,4 +128,173 @@
       top: 0;
     }
     
+  } */
+
+  
+/* Main content styles */
+.contact-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Form styles */
+.formContainer {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+ .toast{
+  margin-top: 4rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+ }
+.formCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-top: 4px solid #f47721;
+  position: relative;
+  z-index: 1;
+}
+
+.formCard h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.formCard h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #f47721;
+}
+
+/* Info Box Styles */
+.infoBox {
+  background-color: #f8f4e8;
+  border-left: 4px solid #138808;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.infoBox h3 {
+  color: #f47721;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.infoBox p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.infoBox ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.infoBox li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.infoBox strong {
+  color: #333;
+}
+
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+select{
+  color: #333;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #f47721;
+  box-shadow: 0 0 0 2px rgba(244, 119, 33, 0.2);
+}
+
+.submitButton {
+  background-color: #f47721;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #e06210;
+}
+
+/* Decorative elements */
+.decorativeElement {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(circle, #138808 10%, transparent 10%),
+    radial-gradient(circle, #138808 10%, transparent 10%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  opacity: 0.15;
+  z-index: 0;
+  border-radius: 50%;
+}
