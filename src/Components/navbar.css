@@ -87,6 +87,9 @@
   border: none !important;
   background-color: transparent !important;
 }
+.goog-te-gadget img{
+  display: none !important;   
+}
 .main-nav {
   display: flex;
   gap: 1.5rem;
