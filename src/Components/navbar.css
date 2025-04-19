@@ -83,6 +83,10 @@
   color:#fff;
   
 }
+.goog-te-gadget-simple {
+  border: none !important;
+  background-color: transparent !important;
+}
 .main-nav {
   display: flex;
   gap: 1.5rem;
