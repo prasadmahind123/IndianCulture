@@ -12,6 +12,9 @@
     color: #4B4B4B;
     line-height: 1.5;   
 }
+.lang-page-1{
+    margin-top: 4rem;
+}
 .lang-page-1 .content{
     display: flex;
 }
