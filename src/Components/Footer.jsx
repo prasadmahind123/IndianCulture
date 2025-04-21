@@ -66,7 +66,7 @@ const handleTemples = () => {
                 <div className="logo-icon">
                   <div className="logo-text">भा</div>
                 </div>
-                <span>भारतीय संस्कृति</span>
+                <span>Indian Essence</span>
               </li>
               <p className="footer-description">Celebrating and preserving the rich cultural heritage of India</p>
             </div>
