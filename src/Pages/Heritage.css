@@ -19,15 +19,6 @@
   border-radius: 0px;
   height: 35rem;
 }
-/* 
-.page-1 .heading h2{
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 1.8rem;
-    display: flex;
-    font-weight: 900;
-    padding: 1.2rem;
-} */
 
 .page-1 .heading p{
     display: flex;
@@ -636,7 +627,6 @@ button {
           text-align: center;
           font-size: 2.5rem;
           margin-bottom: 2rem;
-          color: var(--primary-color);
           position: relative;
           padding-bottom: 15px;
         }
