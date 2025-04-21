@@ -46,8 +46,8 @@ export default function SpecFest() {
                         
                     </p>
                 </div>
-                <div className="title">
-                    <h1></h1>
+                <div className="fest-title">
+                    <h1>{currentData.name}</h1>
                 </div>
                 <div className="wild-text2">
 
