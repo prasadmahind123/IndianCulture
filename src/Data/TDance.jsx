@@ -61,7 +61,7 @@ export const TDance = [
       caption2: 'https://creativecommons.org/licenses/by/2.0',
       auth: "anurag agnihotri",
       licence: "CC BY 2.0  , via Wikimedia Commons",
-      description: "A graceful circular dance performed during Navratri, symbolizing devotion to Goddess Durga.",
+      description: "A graceful circular dance performed during Navratri, symbolizing devotion to Goddess Durga in Gujarat.",
       history: "Originated as a devotional dance in Gujarat, performed around a clay lamp (garbo) representing Goddess Durga.",
       key_features: [
         "Circular movements with claps and twirls.",
@@ -193,7 +193,7 @@ export const TDance = [
       caption2: 'https://creativecommons.org/licenses/by/2.0',
       auth: "Ramesh Lalwani",
       licence: "CC BY 2.0 , , via Wikimedia Commons",
-      description: "A joyful and energetic dance performed during the Assamese New Year to celebrate the harvest.",
+      description: "A joyful and energetic dance performed during the Assamese New Year to celebrate the harvest mostly in Assam.",
       history: "Rooted in Assamese traditions, performed during the Bohag Bihu festival as a tribute to farmers.",
       key_features: [
         "Quick, lively movements and expressive hand gestures.",
@@ -242,7 +242,7 @@ export const TDance = [
       caption2: 'https://creativecommons.org/licenses/by/2.0',
       auth: "Ramesh Lalwani",
       licence: "CC BY 2.0 , via Wikimedia Commons",
-      description: "The Karma dance, also known as Karma Naach, is a tribal dance primarily associated with the state of Jharkhand in Indiaand is also performed in neighboring states ",
+      description: "The Karma dance, is a tribal dance primarily associated with the state of Jharkhand in Indiaand is also performed in neighboring states ",
       history: "Performed by indigenous communities in Chhattisgarh as part of agricultural and nature worship traditions.",
       key_features: [
         "Circular group formations with synchronized footwork.",
