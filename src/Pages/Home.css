@@ -664,6 +664,12 @@
   padding: 4rem 0;
 }
 
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 .newsletter-form {
   display: flex;
   flex-direction: column;
