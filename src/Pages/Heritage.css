@@ -773,7 +773,20 @@ button {
           color: var(--text-color);
         }
 
-   
+           .category-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .category-info {
+          margin-bottom: 10px;
+        }
+        
+        .read-more {
+          margin-top: auto;
+          align-self: flex-end;
+        }
 
         /* Featured Site Section */
         .heritage  .featured-site {
