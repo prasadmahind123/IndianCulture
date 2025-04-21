@@ -302,8 +302,8 @@ export const FestivalData = [
         name : "cheti chand",
         date : "When: March/April",
         img1 : "/images/Festivals/chetri-1.webp",
-        img2 : "/images/Festivals/cheti chand2.jpg",
-        img3 : "/images/Festivals/cheti chand3.jpg",
+        img2 : "/images/Festivals/cheti_chand2.jpg",
+        img3 : "/images/Festivals/cheti_chand3.jpg",
         description : "Cheti Chand, also known as Jhulelal Jayanti, is the Sindhi New Year festival celebrated by the Sindhi Hindu community.",
         info : [
             "Cheti Chand, also known as Jhulelal Jayanti, is the Sindhi New Year festival celebrated by the Sindhi Hindu community. It marks the birth anniversary of Jhulelal, the community's patron saint and an incarnation of Varuna Devta, the Vedic deity of water. The festival falls on the first or second day of the Sindhi month of Chet, corresponding to late March or early April in the Gregorian calendar. ",
