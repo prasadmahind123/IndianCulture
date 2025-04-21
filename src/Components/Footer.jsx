@@ -7,6 +7,9 @@ export default function Footer() {
   const handleForts = () => {
     navigate('/forts');
   }
+  const handleCaves = () => {
+       navigate('/caves');
+  }
   const handleLang = () => {
     navigate('/language');
   }
@@ -96,8 +99,8 @@ const handleTemples = () => {
                 <li className="footer-link" onClick={handleForts}>
                     Forts
                 </li>
-                <li className="footer-link" onClick={handleHeritage}>
-                    Heritage Sites
+                <li className="footer-link" onClick={handleCaves}>
+                    Caves
                 </li>
                 <li className="footer-link" onClick={handleMusic}>
                     Indian Music
