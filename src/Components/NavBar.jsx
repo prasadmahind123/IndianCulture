@@ -92,7 +92,7 @@ export default function NavBar() {
             <div className="logo-icon">
               <div className="logo-text">भा</div>
             </div>
-            <span>भारतीय संस्कृति</span>
+            <span>Indian Essence</span>
           </Link>
           <nav className="main-nav">
             <li onClick={handleHome} className="nav-link">
@@ -154,7 +154,7 @@ export default function NavBar() {
             <div className="logo-icon">
               <div className="logo-text">भा</div>
             </div>
-            <span>भारतीय संस्कृति</span>
+            <span>Indian Essence</span>
           </Link>
           <nav className="main-nav">
             <li onClick={handleHome} className="nav-link">
