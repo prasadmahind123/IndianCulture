@@ -305,7 +305,7 @@ const Cuisine = () => {
                 <div className="dish-content">
                   <p className="dish-description">{dish.description}</p>
                 </div>
-                <div className="read-more">
+                <div className="dish-footer">
                   <Link to={`/cuisine/${dish.index}`}>
                     <button className="dish-link">
                       View Details <ChevronRight className="ml-1 h-4 w-4" />
