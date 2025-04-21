@@ -41,7 +41,7 @@ export default function StateFood() {
                     </p>
                 </div>
                 
-                <div className="title">
+                <div className="fest-title">
                     <h1>{currentData.title}</h1>
                 </div>
                 <div className="dance-text">
