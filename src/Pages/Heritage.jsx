@@ -81,7 +81,7 @@ export default function Heritage() {
             </div>
             
             <div className="read-more">
-              Explore <ChevronRight className="icon" size={16} onClick={() => navigate('/architecture')} />
+              Explore <ChevronRight className="icon" size={16} onClick={() => navigate('/art')} />
             </div>
           </div>
 
@@ -95,7 +95,7 @@ export default function Heritage() {
             </div>
             
             <div className="read-more">
-              Explore <ChevronRight className="icon" size={16} onClick={() => navigate('/architecture')} />
+              Explore <ChevronRight className="icon" size={16} onClick={() => navigate('/wild')} />
             </div>
           </div>
 
@@ -109,7 +109,7 @@ export default function Heritage() {
             </div>
             
             <div className="read-more">
-              Explore <ChevronRight className="icon" size={16} onClick={() => navigate('/architecture')} />
+              Explore <ChevronRight className="icon" size={16} onClick={() => navigate('/cuisine')} />
             </div>
           </div>
         </div>
