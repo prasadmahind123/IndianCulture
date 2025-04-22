@@ -157,7 +157,7 @@ const Home = () => {
                   alt="Festival celebration"
                   width={800}
                   height={600}
-                  className="rounded-image"
+                  className="rounded-image1"
                 />
               </div>
               <div className="content-column">
