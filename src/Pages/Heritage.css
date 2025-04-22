@@ -897,6 +897,7 @@ button {
           right: -150px;
           color: var(--primary-color);
           font-weight: bold;
+          padding-bottom: 1rem;
         }
 
         .timeline-item:nth-child(even) .timeline-date {
