@@ -43,7 +43,7 @@ export default function StateDance() {
                     </p>
                 </div>
                 
-                <div className="title">
+                <div className="fest-title">
                     <h1>{currentData.dance}</h1>
                 </div>
                 <div className="dance-text">
