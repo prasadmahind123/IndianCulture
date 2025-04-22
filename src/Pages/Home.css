@@ -868,13 +868,7 @@
       margin: 0 auto;
     }
   }
-  
 
-  @media (max-width:768px) {
-    .destinations-content{
-      padding: 1rem;
-    }
-  }
   @media (max-width: 768px) {
   
     .hero-title {
