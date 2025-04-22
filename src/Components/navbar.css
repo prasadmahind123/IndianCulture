@@ -152,7 +152,7 @@
 .sidebar{
   z-index: 99999;
 }
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .header{
     height:3rem;
   }
