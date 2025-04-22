@@ -353,6 +353,11 @@
   border-radius: 0.75rem;
   object-fit: cover;
 }
+.rounded-image1{
+  border-radius: 0.75rem;
+  object-fit: cover;
+  width: 100%;
+}
 
 /* Badges */
 .badge {
