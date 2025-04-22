@@ -931,6 +931,10 @@
     .monuments-grid {
       grid-template-columns: 1fr;
     }
+    .gallery-item {
+      width: 90%;
+      margin: 0 auto;
+    }
     
     .gallery-grid {
       grid-template-columns: 1fr;
