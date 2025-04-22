@@ -39,8 +39,7 @@ export default function Heritage() {
         <section className="hero">
             <div className="hero-content">
                 <h1>Discover India&apos;s Rich Heritage</h1>
-                <p>Explore the vibrant tapestry of traditions, art, and culture spanning thousands of years</p>
-                <button className="primary-button">Explore Now</button>
+                <p>India&apos;s rich heritage is a blend of its diverse cultures, religions, languages, and traditions that have evolved over thousands of years. From ancient civilizations like the Indus Valley to the spiritual teachings of the Vedas, India's history reflects its deep-rooted values, art, and architecture. Temples, forts, classical dance, music, and festivals all showcase the vibrant cultural tapestry of the nation.</p>
             </div>
             <div className="hero-image">
                 <img
