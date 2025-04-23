@@ -87,7 +87,7 @@ if (isLoading) {
                     {currentData.title}
                 </p>
             </div>
-            <div className="title">
+            <div className="fest-title">
                 <h1>{currentData.title}</h1>
             </div>
             <div className="wild-text1">
